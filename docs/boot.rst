@@ -13,7 +13,7 @@ sign in to the console).
 0. Select "EC2 - virtual servers in the cloud"
 ==============================================
 
-.. thumbnail:: ../images/boot-0.png
+.. thumbnail:: ec2-tutorials/images/boot-0.png
    :width: 20%
            
 1. Switch to zone US West (N California)
