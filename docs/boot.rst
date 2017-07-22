@@ -14,7 +14,7 @@ sign in to the console).
 ==============================================
 
 .. image:: ../images/boot-0.png
-   :width: 20%
+   :width: 80%
            
 1. Switch to zone US West (N California)
 ========================================
