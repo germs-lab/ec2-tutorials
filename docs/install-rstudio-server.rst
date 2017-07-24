@@ -19,7 +19,7 @@ Reference documentation for running RStudio Server on Ubuntu:
 1. Start up an Amazon instance
 ------------------------------
 
-Start an ami-05384865 on an m4.xlarge machine, as per the instructions here:
+Start an Ubuntu image using ami-05ed6813 on an m4.xlarge machine, as per the instructions here:
 
 :doc:`boot`.
 
@@ -36,6 +36,8 @@ Follow these instructions:
 
 (You can do this while the computer is booting.)
 
+You'll also want to update your DNS support and ensure that both DNS resolution and DNS hostnames are set to "yes" by following these `instructions <http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html#vpc-dns-updating>.`_
+
 3. Log in via the shell
 -----------------------
 
@@ -43,53 +45,31 @@ Follow these instructions to log in via the shell:
 
 :doc:`login-shell`.
 
-4. Set a password for the 'ubuntu' account
-------------------------------------------
 
-Amazon Web Services computers normally require a key (the .pem file)
-instead of a login password, but RStudio Server will need us to log in
-with a password.  So we need to configure a password for the account
-we're going to use (which is 'ubuntu')
-
-Create a password like so::
-  
-     sudo passwd ubuntu
-
-and set it to something you'll remember.
-
-5. Install R and the gdebi tool
--------------------------------
-
-.. @@ reference debian install instructions https://help.ubuntu.com/community/AptGet/Howto and https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html
-
-Update the software catalog and install a few things::
-
-     sudo apt-get update && sudo apt-get -y install gdebi-core r-base
+4. Install R and the RStudio tool
+---------------------------------
+     sudo docker pull docker pull rocker/rstudio
+     sudo docker run --rm -ti rocker/r-base
+     sudo docker run -d -p 8787:8787 rocker/rstudio
 
 This will take a few minutes.
 
-6. Download & install RStudio Server
-------------------------------------
+Upon success, you should see something a print out of alphanumerics.
 
-::
-   
-     wget https://download2.rstudio.org/rstudio-server-0.99.891-amd64.deb
-     sudo gdebi -n rstudio-server-0.99.891-amd64.deb
+5.  Download data for the visualization tutorial.
 
-Upon success, you should see::
-
-   Mar 07 15:20:18 ip-172-31-6-68 systemd[1]: Starting RStudio Server...
-   Mar 07 15:20:18 ip-172-31-6-68 systemd[1]: Started RStudio Server.
+     cd /root/rstudio
+     sudo wget wget https://raw.githubusercontent.com/data-lessons/gapminder-R/gh-pages/data/raw_data/gapminder.csv
 
 7. Open your RStudio Server instance
 ------------------------------------
 
-Finally, go to 'http://' + your hostname + ':8787' in a browser,
+Finally, go to 'http://' + your IPv4 public hostname + ':8787' in a browser,
 eg. ::
 
-   http://ec2-XX-YY-33-165.us-west-1.compute.amazonaws.com:8787/
+   http://XX.XXX.XXX.XXX:8787/
 
-and log into RStudio with username 'ubuntu' and the password
+and log into RStudio with username 'rstudio' and the password 'rstudio'
 you set it to above.
 
 Voila!
@@ -104,9 +84,5 @@ will be there.
 
 Go back to the index: :doc:`index`.
 
-.. @@CTB demonstrate graphing, etc.
-.. revisiting what we did...
 
-.. @@ rebooting; converting to AMI
-   
 .. @@ meditations on file transfer
