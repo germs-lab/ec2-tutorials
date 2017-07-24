@@ -21,7 +21,7 @@ Reference documentation for running RStudio Server on Ubuntu:
 
 Start an Ubuntu image using ami-05ed6813 on an m4.xlarge machine, as per the instructions here:
 
-:doc:`boot`.
+:doc:`boot`
 
 2. Configure your network firewall
 ----------------------------------
@@ -48,9 +48,10 @@ Follow these instructions to log in via the shell:
 
 4. Install R and the RStudio tool
 ---------------------------------
-     sudo docker pull docker pull rocker/rstudio
-     sudo docker run --rm -ti rocker/r-base
-     sudo docker run -d -p 8787:8787 rocker/rstudio
+
+    sudo docker pull docker pull rocker/rstudio
+    sudo docker run --rm -ti rocker/r-base
+    sudo docker run -d -p 8787:8787 rocker/rstudio
 
 This will take a few minutes.
 
@@ -58,8 +59,8 @@ Upon success, you should see something a print out of alphanumerics.
 
 5.  Download data for the visualization tutorial.
 
-     cd /root/rstudio
-     sudo wget wget https://raw.githubusercontent.com/data-lessons/gapminder-R/gh-pages/data/raw_data/gapminder.csv
+    cd /root/rstudio
+    sudo wget https://raw.githubusercontent.com/data-lessons/gapminder-R/gh-pages/data/raw_data/gapminder.csv
 
 7. Open your RStudio Server instance
 ------------------------------------
