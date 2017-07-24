@@ -7,7 +7,7 @@ computer.
 
 ----
 
-Start at the Amazon Web Services console 'EC2 launch wizard<https://console.aws.amazon.com/ec2/v2>'_.  You'll need to sign in to EC2.
+Start at the Amazon Web Services console `EC2 launch wizard <https://console.aws.amazon.com/ec2/v2>`_.  You'll need to sign in to EC2.
 
 1. Switch to zone US East (N Virginia) if not already there
 ===========================================================
