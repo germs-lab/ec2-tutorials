@@ -42,7 +42,11 @@ information page, and click on "launch-wizard-N".
 5. Enter rule information
 -------------------------
 
-Add a new rule: Custom TCP, 8000-9000, Source Anywhere.
+Add a new rule: Custom TCP, 8787, Source Anywhere.
+
+Add a new rule: HTTP, 80, Source Anywhere.
+
+Add a new rule: HTTPS, 443, Source Anywhere.
 
 6. Select 'Save'.
 -----------------
