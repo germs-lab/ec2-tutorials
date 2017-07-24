@@ -50,7 +50,7 @@ Add a new rule: Custom TCP, 8000-9000, Source Anywhere.
 7. Return to the Instances page.
 --------------------------------
 
-.. image:: ../../images/network-4.png
+.. image:: ../images/network-4.png
    :width: 20%
 
 ----
