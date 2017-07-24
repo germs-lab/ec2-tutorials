@@ -18,22 +18,22 @@ To terminate:
 
 In the 'Instances' tab, select your instance and then go to the Actions menu.
 
-.. thumbnail:: images/terminate-1.png
-   :width: 20%
+.. image:: ../images/terminate-1.png
+   :width: 80%
 
 2. Agree to terminate.
 ----------------------
 
-.. thumbnail:: images/terminate-2.png
-   :width: 20%
+.. image:: ../images/terminate-2.png
+   :width: 80%
 
 3. Verify status on your instance page.
 ---------------------------------------
 
 Instance state should be either "shutting down" or "terminated".
 
-.. thumbnail:: images/terminate-3.png
-   :width: 20%
+.. image:: ../images//terminate-3.png
+   :width: 80%
 
 -----
 

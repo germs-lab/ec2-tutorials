@@ -18,38 +18,38 @@ Creating persistent volumes to store data
 0. Locate your instance *zone*
 ------------------------------
 
-.. thumbnail:: images/add-volume-1d.png
-   :width: 20%
+.. image:: ../images/add-volume-1d.png
+   :width: 80%
 
 1. Click on the volumes tab
 ---------------------------
 
-.. thumbnail:: images/add-volume-1.png
-   :width: 20%
+.. image:: ../images/add-volume-1.png
+   :width: 80%
 
 2. 'Create Volume'
-------------------   
+------------------
 
-.. thumbnail:: images/add-volume-1b.png
-   :width: 20%
+.. image:: ../images/add-volume-1b.png
+   :width: 80%
 
 3. Configure your volume to have the same zone as your instance
 ---------------------------------------------------------------
 
-.. thumbnail:: images/add-volume-1c.png
-   :width: 20%
+.. image:: ../images/add-volume-1c.png
+   :width: 80%
 
 4. Wait for your volume to be available
 ---------------------------------------
 
-.. thumbnail:: images/add-volume-2.png
-   :width: 20%
+.. image:: ../images/add-volume-2.png
+   :width: 80%
 
 5. Select volume, Actions, Attach volume
 ----------------------------------------
 
-.. thumbnail:: images/add-volume-3.png
-   :width: 20%
+.. image:: ../images/add-volume-3.png
+   :width: 80%
 
 6. Select instance, attachment point, and Attach
 ------------------------------------------------
@@ -57,8 +57,8 @@ Creating persistent volumes to store data
 Here, your attachment point will be '/dev/sdf' and your block device will
 be named '/dev/xvdf'.
 
-.. thumbnail:: images/add-volume-4.png
-   :width: 20%
+.. image:: ../images/add-volume-4.png
+   :width: 80%
 
 7. On your instance, list block devices
 ---------------------------------------
@@ -70,9 +70,9 @@ Type::
 You should see something like this::
 
   NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-  xvda    202:0    0    8G  0 disk
-  `-xvda1 202:1    0    8G  0 part /
-  xvdf    202:80   0  100G  0 disk
+  xvda    802:0    0    8G  0 disk
+  `-xvda1 802:1    0    8G  0 part /
+  xvdf    802:80   0  100G  0 disk
 
 Now format the disk (ONLY ON EMPTY DISKS - THIS WILL ERASE ANY DATA ON
 THE DISK)::
@@ -80,7 +80,7 @@ THE DISK)::
    sudo mkfs -t ext4 /dev/xvdf
 
 and mount the disk::
-   
+
    sudo mkdir /disk
    sudo mount /dev/xvdf /disk
    sudo chmod a+rwxt /disk
@@ -104,35 +104,35 @@ Change out of the directory, stop any running programs using it, and then::
 
 On the 'volumes' tab in your EC2 console, go to Actions, Detach.
 
-.. thumbnail:: images/add-volume-5.png
-   :width: 20%
+.. image:: ../images/add-volume-5.png
+   :width: 80%
 
 3. Yes, detach.
 ---------------
 
-.. thumbnail:: images/add-volume-6.png
-   :width: 20%
+.. image:: ../images/add-volume-6.png
+   :width: 80%
 
 Note, volumes remain attached when you reboot or stop an instance, but
 are (of course) detached when you terminate an instance.
-           
+
 Creating snapshots of volumes
 =============================
 
 1. Actions, Create snapshot
----------------------------   
+---------------------------
 
-.. thumbnail:: images/create-snapshot-1.png
-   :width: 20%
+.. image:: ../images/create-snapshot-1.png
+   :width: 80%
 
-2. Fill out name and description          
+2. Fill out name and description
 --------------------------------
 
-.. thumbnail:: images/create-snapshot-2.png
-   :width: 20%
+.. image:: ../images/create-snapshot-2.png
+   :width: 80%
 
 3. Click 'Close' & wait.
 ------------------------
 
-.. thumbnail:: images/create-snapshot-3.png
-   :width: 20%
+.. image:: ../images/create-snapshot-3.png
+   :width: 80%
