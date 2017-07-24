@@ -9,7 +9,7 @@ You'll need to do two things: first, set the permissions on
 
 Then, ssh into your new machine using your key::
 
-   ssh -i ~/Downloads/amazon-key.pem -l ubuntu MACHINE_NAME
+   ssh -i ~/Downloads/amazon-key.pem ubuntu@MACHINE_NAME
 
 where you should replace MACHINE_NAME with the public IP or hostname
 of your EC2 instance, which is located at the top of the host
