@@ -49,6 +49,8 @@ Follow these instructions to log in via the shell:
 4. Install R and the RStudio tool
 ---------------------------------
 
+Type the following commands ::
+
     sudo docker pull docker pull rocker/rstudio
     sudo docker run --rm -ti rocker/r-base
     sudo docker run -d -p 8787:8787 rocker/rstudio
@@ -57,7 +59,7 @@ This will take a few minutes.
 
 Upon success, you should see something a print out of alphanumerics.
 
-5.  Download data for the visualization tutorial.
+5.  Download data for the visualization tutorial ::
 
     cd /root/rstudio
     sudo wget https://raw.githubusercontent.com/data-lessons/gapminder-R/gh-pages/data/raw_data/gapminder.csv
