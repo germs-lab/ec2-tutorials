@@ -36,7 +36,7 @@ Follow these instructions:
 
 (You can do this while the computer is booting.)
 
-You'll also want to update your DNS support and ensure that both DNS resolution and DNS hostnames are set to "yes" by following these `instructions <http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html#vpc-dns-updating>.`_
+You'll also want to update your DNS support and ensure that both DNS resolution and DNS hostnames are set to "yes" by following these `instructions. <http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html#vpc-dns-updating>`_
 
 3. Log in via the shell
 -----------------------
