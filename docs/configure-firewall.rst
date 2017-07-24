@@ -19,25 +19,25 @@ Find "Security Groups" in the lower pane of your instance's
 information page, and click on "launch-wizard-N".
 
 .. image:: ../images/network-0.png
-   :width: 20%
+   :width: 80%
 
 2. Select 'Inbound'
 -------------------
 
 .. image:: ../images/network-1.png
-   :width: 20%
+   :width: 80%
 
 3. Select 'Edit'
 ----------------
 
 .. image:: ../images/network-2.png
-   :width: 20%
+   :width: 80%
 
 4. Select 'Add Rule'
 --------------------
 
 .. image:: ../images/network-3.png
-   :width: 20%
+   :width: 80%
 
 5. Enter rule information
 -------------------------
@@ -51,7 +51,7 @@ Add a new rule: Custom TCP, 8000-9000, Source Anywhere.
 --------------------------------
 
 .. image:: ../images/network-4.png
-   :width: 20%
+   :width: 80%
 
 ----
 
