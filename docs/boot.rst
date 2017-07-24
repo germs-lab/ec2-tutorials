@@ -7,17 +7,10 @@ computer.
 
 ----
 
-Start at the Amazon Web Services console (http://aws.amazon.com/ and
-sign in to the console).
+Start at the Amazon Web Services console EC2 launch wizard (https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#).  You'll need to sign in to EC2.
 
-0. Select "EC2 - virtual servers in the cloud"
-==============================================
-
-.. image:: ../images/boot-0.png
-   :width: 80%
-           
-1. Switch to zone US West (N California)
-========================================
+1. Switch to zone US East (N Virginia) if not already there
+===========================================================
 
 .. image:: ../images/boot-1.png
    :width: 80%
@@ -25,16 +18,19 @@ sign in to the console).
 2. Click on "Launch instance."
 ==============================
 
+.. image:: ../images/boot-1.png
+   :width: 80%
+
 3. Select "Community AMIs."
 ===========================
 
 .. image:: ../images/boot-2.png
    :width: 80%
 
-4. Search for ami-05384865 (ubuntu-wily-15.10-amd64-server)
+4. Search for ami-002f0f6a (ubuntu-wily-15.10-amd64-server)
 ===========================================================
 
-Use ami-05384865.
+Use ami-002f0f6a.
 
 .. thumbnail:: ../images/boot-3.png
    :width: 80%
@@ -54,7 +50,7 @@ Use ami-05384865.
 8. Click "Launch."
 ==================
 
-.. thumbnail:: ../images/boot-5.png
+.. image:: ../images/boot-5.png
    :width: 20%
 
 9. Select "Create a new key pair."
@@ -82,7 +78,7 @@ If you have an existing key pair, go to step 12, "Launch instance."
 13. Select View instances (lower right)
 =======================================
 
-.. thumbnail:: ../images/boot-8.png
+.. image:: ../images/boot-8.png
    :width: 80%
 
 14. Bask in the glory of your running instance
@@ -91,7 +87,7 @@ If you have an existing key pair, go to step 12, "Launch instance."
 Note that for your instance name you can use either "Public IP" or
 "Public DNS". Here, the machine only has a public IP.
 
-.. thumbnail:: ../images/boot-9.png
+.. image:: ../images/boot-9.png
    :width: 80%
 
 You can now :doc:`login-shell` or :doc:`configure-firewall`.
