@@ -52,7 +52,6 @@ Follow these instructions to log in via the shell:
 Type the following commands ::
 
     sudo docker pull docker pull rocker/rstudio
-    sudo docker run --rm -ti rocker/r-base
     sudo docker run -d -p 8787:8787 rocker/rstudio
 
 This will take a few minutes.
