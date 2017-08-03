@@ -8,7 +8,7 @@ step 11 of booting up your new instance (see :doc:`boot`).
 Download Filezilla
 ==================
 
-Download the FTP application `Filezilla <https://filezilla-project.org/>_`.  Note:  There is an optional step in my install that asked if I wanted Yahoo to be my default browser, and I checked "NO".
+Download the FTP application `Filezilla <https://filezilla-project.org/>`_.  Note:  There is an optional step in my install that asked if I wanted Yahoo to be my default browser, and I checked "NO".
 
 Open FileZilla
 ==============
