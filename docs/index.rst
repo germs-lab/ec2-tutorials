@@ -17,6 +17,7 @@ Full table of contents:
    login-shell-win
    configure-firewall
    install-rstudio-server
+   transfer-data
    creating-ami
    volumes-and-snapshots
    terminate-instance
