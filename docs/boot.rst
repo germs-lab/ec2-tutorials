@@ -7,6 +7,17 @@ computer.
 
 ----
 
+0.  Introduction
+================
+
+Why would you use cloud computing?:
+
+#. Your computer does not have enough resources to run the desired analysis (memory, processors, disk space, network bandwidth).
+#. You want to produce results faster than your computer can.
+#. You cannot install software in your computer (application does not have support for your operating system, conflicts with other existing applications)
+#. You need dynamic resources -- e.g., you only need a high mem machine for a week but not a whole year.
+#. You don't want to have to manage the infrastructure of an HPC or have access to an HPC.
+
 Start at the Amazon Web Services console `EC2 launch wizard <https://console.aws.amazon.com/ec2/v2>`_.  You'll need to sign in to EC2.
 
 1. Switch to zone US East (N Virginia) if not already there
