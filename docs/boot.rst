@@ -12,7 +12,7 @@ computer.
 
 Why would you use cloud computing?:
 
-`More resources <http://ec2-tutorials.readthedocs.io/en/latest/index.html>`
+`More resources <http://ec2-tutorials.readthedocs.io/en/latest/index.html>`_
 
 #. Your computer does not have enough resources to run the desired analysis (memory, processors, disk space, network bandwidth).
 #. You want to produce results faster than your computer can.
